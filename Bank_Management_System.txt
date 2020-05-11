@@ -1,0 +1,122 @@
+#include<iostream>
+
+
+using namespace std;
+
+
+
+
+class Bank
+{
+	string name,address,Account_no;
+	
+	char acc_type;
+	
+	float balance;
+	
+	
+public:
+	
+	void open_account()
+	{
+		name= "Akshay Mule";
+		Account_no="SBI12345";
+		
+		cout<<"Enter Your Full Name :"<<" "<<name<<endl;
+		
+		address="Nanded";
+		cout<<"Enter Your Account No:"<<" "<<Account_no<<endl;
+		Account_no="SBI12345";
+		
+		cout<<"Enter Your Address:"<<" "<<address<<endl;
+		
+		acc_type='S';
+		
+		cout<<"What type of account you want to open Savings(S) or Current(C):"<<" "<<acc_type<<endl;
+		
+		balance=30000;
+		
+		cout<<"Enter How Much amount you want to deposit:"<<" "<<balance<<endl;
+		
+		//cout<<"Account Created Successfully"<<endl;
+	}
+	
+	void show_accountinfo()
+	{
+		cout<<"************************************"<<endl;
+		
+		cout<<"***********Account Info**************"<<endl;	
+			
+			name= "Akshay Mule";
+		
+		cout<<" Account Holder Name :"<<" "<<name<<endl;
+		
+		address="Nanded";
+		
+		cout<<"Account Holder  Address:"<<" "<<address<<endl;
+		
+		acc_type='S';
+		
+		cout<<"Type of Your Account:"<<" "<<acc_type<<endl;
+		
+		balance=30000;
+	
+		cout<<"Account Balance:"<<" "<<balance<<endl;
+		
+		
+		
+	}
+	
+	
+	void deposit_money()
+	{
+		int amount=90000;
+		
+		cout<<"****** Deposit  ********"<<endl;
+		
+		cout<<"Enter How Much Money You want to deposit:"<<" "<<amount<<endl;
+		
+		balance=balance+amount;
+		
+		cout<<"Available balance:"<<" "<<balance<<endl;
+	}
+	
+	void withdraw_money()
+	{
+		int amount=20000;
+		cout<<"****** Withdraw  ********"<<endl;
+		cout<<"Enter How Much Money You want to withdraw:"<<" "<<amount<<endl;
+		
+		balance=balance-amount;
+		
+		cout<<"Available balance:"<<" "<<balance<<endl;
+		
+		
+	}
+	
+	exit()
+	{
+		return 0;
+	}
+	
+};
+	
+	
+	
+	
+	int main() 
+	{
+		Bank customer;
+				
+	 customer.open_account();
+		
+		customer.show_accountinfo();
+		
+		customer.deposit_money();
+		
+		customer.withdraw_money();
+		
+		customer.exit();
+		
+		return 0;
+	}
