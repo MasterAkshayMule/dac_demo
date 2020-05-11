@@ -13,7 +13,7 @@ public:
 	{
 		a=10;
 		b=20;
-		
+	cout<<a<<b;
 	
 	}
 	
@@ -23,7 +23,5 @@ int main()
 {
 	prac p; 
 	
-	cout<<"a="<<p.a<<endl;
 	
-	cout<<"b="<<p.b;
 }
