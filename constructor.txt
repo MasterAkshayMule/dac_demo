@@ -1,0 +1,29 @@
+#include<iostream>
+
+
+using namespace std;
+
+class prac
+{
+	
+	
+public:
+	int a,b;
+	prac()
+	{
+		a=10;
+		b=20;
+		
+	
+	}
+	
+};
+
+int main()
+{
+	prac p; 
+	
+	cout<<"a="<<p.a<<endl;
+	
+	cout<<"b="<<p.b;
+}
